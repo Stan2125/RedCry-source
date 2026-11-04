@@ -149,6 +149,13 @@ object TextyCz : Texty {
         "Předchozí volba je tah, který motor považoval za nejlepší, než " +
             "ve větší hloubce našel lepší. Nemusí to být objektivně druhý " +
             "nejlepší tah."
+    /** Posledni poznamka v okne (krok P1, zasady Google Play). */
+    override val poznamkaSoukromi =
+        "Ochrana soukromí: RedCry nesbírá, neodesílá ani nesdílí žádné " +
+            "osobní údaje. Nemá přístup k internetu, reklamy ani analytiku. " +
+            "Partie a analýzy ukládá do souborů, které sám vybereš, " +
+            "nastavení a průběh analýzy si drží v telefonu. Celé znění: " +
+            "github.com/Stan2125/RedCry-source/blob/main/PRIVACY.md"
     /** Tlacitko dole v okne. */
     override val zavrit = "Zavřít"
     /** Hlavicka tabulky Elo motoru: tri sloupce. */

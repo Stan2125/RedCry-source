@@ -114,6 +114,12 @@ object TextyEn : Texty {
         "Previous choice is the move the engine considered best before it found " +
             "a better one at a greater depth. It is not necessarily the " +
             "objectively second-best move."
+    override val poznamkaSoukromi =
+        "Privacy: RedCry does not collect, send or share any personal " +
+            "data. It has no internet access, no ads and no analytics. " +
+            "Games and analyses are saved to files you choose; settings " +
+            "and analysis progress are kept on the device. Full policy: " +
+            "github.com/Stan2125/RedCry-source/blob/main/PRIVACY.md"
     override val zavrit = "Close"
     override val eloMotor = "Engine"
     override val eloElo = "Elo"

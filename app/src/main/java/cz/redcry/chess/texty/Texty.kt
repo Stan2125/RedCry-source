@@ -76,6 +76,7 @@ interface Texty {
     val poznamkaSlabsiStockfish: String
     val poznamkaHodnoceni: String
     val poznamkaPredchoziVolba: String
+    val poznamkaSoukromi: String
     val zavrit: String
     val eloMotor: String
     val eloElo: String

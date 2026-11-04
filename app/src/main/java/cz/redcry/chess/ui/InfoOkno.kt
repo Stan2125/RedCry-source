@@ -215,6 +215,10 @@ internal fun ZaznamDialog(
                     // Krok U14/C.
                     Spacer(Modifier.height(6.dp))
                     Poznamka(texty.poznamkaPredchoziVolba)
+
+                    // Krok P1: zasady ochrany soukromi (Google Play).
+                    HorizontalDivider(modifier = Modifier.padding(vertical = 8.dp))
+                    Poznamka(texty.poznamkaSoukromi)
                 }
 
                 Spacer(Modifier.height(8.dp))

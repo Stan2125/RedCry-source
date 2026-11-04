@@ -25,15 +25,15 @@ val sitStockfisheZdroje = listOf(
 
 android {
     namespace = "cz.redcry.chess"
-    compileSdk = 35
+    compileSdk = 36
     ndkVersion = "27.2.12479018"
 
     defaultConfig {
         applicationId = "cz.redcry.chess"
         minSdk = 26
-        targetSdk = 35
-        versionCode = 1
-        versionName = "0.1"
+        targetSdk = 36
+        versionCode = 2
+        versionName = "0.2"
 
         // ABI (arm64-v8a pro telefon, x86_64 pro emulator) urcuje jen
         // splits.abi nize. ndk.abiFilters tu byt nesmi: AGP ho vedle splits
@@ -67,6 +67,16 @@ android {
             reset()
             include("arm64-v8a", "x86_64")
             isUniversalApk = false
+        }
+    }
+
+    // Krok P1 - splits.abi plati jen pro APK, ne pro AAB (bundleRelease).
+    // Do AAB by se dostala i armeabi-v7a a x86, protoze pro ne ma Compose
+    // libandroidx.graphics.path.so. Google Play by pak aplikaci nabidl
+    // i zarizenim, pro ktera libredcry.so neni, a ta by pri startu spadla.
+    packaging {
+        jniLibs {
+            excludes += setOf("lib/armeabi-v7a/**", "lib/x86/**")
         }
     }
 
