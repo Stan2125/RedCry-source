@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Pozadi ikony (krok U5/B): tmave pole sachovnice roztazene na celou
+    plochu 108 x 108 dp, jako <image preserveAspectRatio="none"> v
+    docs/navrhy/ikona/ikona_A.svg. Tytez bajty jako pole na desce.
+-->
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+    android:src="@drawable/wood_dark"
+    android:gravity="fill"
+    android:filter="true" />

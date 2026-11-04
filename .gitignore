@@ -1,0 +1,8 @@
+local.properties
+.gradle/
+build/
+.cxx/
+.kotlin/
+*.apk
+*.aab
+app/src/main/cpp/stockfish/nn-*.nnue
