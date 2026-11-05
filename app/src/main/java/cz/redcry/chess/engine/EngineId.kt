@@ -40,7 +40,7 @@ enum class EngineId(
     /** Meze z `uci.cpp`: `option name Depth type spin default 4 min 1 max 12`. */
     LIGHT_RED(
         label = "LightRed",
-        popis = "nejslabsi, prepis vlastniho enginu z roku 2005",
+        popis = "nejslabsi, prepis vlastniho enginu z roku 2000",
         dostupny = true,
         minHloubka = 1,
         maxHloubka = 12,

@@ -20,7 +20,7 @@ import java.util.concurrent.Executors
  * Motor Light Red. Prvni skutecny engine v RedCry - nahradil atrapu
  * motoru z kroku 1 (smazana v kroku U1).
  *
- * Prevedeny z Delphi (Light_Red_211_2_f.pas, 2005) do C++17. Slaby, zna jen
+ * Prevedeny z Delphi (Light_Red_211_2_f.pas, 2000) do C++17. Slaby, zna jen
  * material, ale pravidla ma cela a overena perftem do hloubky 6.
  *
  * ROZDELENI PRACE MEZI VLAKNA

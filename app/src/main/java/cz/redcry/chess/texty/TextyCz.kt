@@ -58,7 +58,7 @@ object TextyCz : Texty {
     // --- Hlavni obrazovka: ovladani motoru ----------------------------------
 
     /** Popisek vyberu motoru. */
-    override val engine = "Engine"
+    override val engine = "Motor"
     /** Prepinac u Stockfishe. */
     override val plnaSila = "Plná síla"
     /** Radek s Elo u Stockfishe a nadpis dialogu zadani Elo. */

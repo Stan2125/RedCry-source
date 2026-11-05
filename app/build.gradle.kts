@@ -32,8 +32,8 @@ android {
         applicationId = "cz.redcry.chess"
         minSdk = 26
         targetSdk = 36
-        versionCode = 2
-        versionName = "0.2"
+        versionCode = 3
+        versionName = "0.3"
 
         // ABI (arm64-v8a pro telefon, x86_64 pro emulator) urcuje jen
         // splits.abi nize. ndk.abiFilters tu byt nesmi: AGP ho vedle splits
