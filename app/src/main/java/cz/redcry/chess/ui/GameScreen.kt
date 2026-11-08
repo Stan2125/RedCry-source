@@ -166,8 +166,8 @@ private fun ObrazovkaHry(viewModel: GameViewModel) {
 
     LaunchedEffect(viewModel) {
         // collectLatest, ne collect (U11): s collect se dalsi hlaska vzala
-        // az po dobehnuti predchozi, takze 3x rychle <- drzelo "Jsi na
-        // zacatku partie." 6 s misto 2 s (zmereno na emulatoru). Nova
+        // az po dobehnuti predchozi, takze 3x rychle <- drzelo "Zacatek
+        // partie." 6 s misto 2 s (zmereno na emulatoru). Nova
         // hlaska predchozi ukazHlasku zrusi a tim ji sunda z obrazovky.
         viewModel.messages.collectLatest { message ->
             ukazHlasku(snackbarHostState, message, a11y)

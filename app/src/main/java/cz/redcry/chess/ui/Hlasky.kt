@@ -12,7 +12,7 @@ const val HLASKA_KRATKA_ZNAKU = 40
 /**
  * Jak dlouho ma hlaska dole zustat videt, podle delky textu (U11).
  *
- * Rozhodnuti uzivatele: kratke hlasky ("Neplatný tah.", "Jsi na začátku
+ * Rozhodnuti uzivatele: kratke hlasky ("Neplatný tah.", "Začátek
  * partie.") jsou typicky odpoved na klepnuti, prectou se hned a 4 s by jen
  * zbytecne zakryvaly tlacitka. Dlouhe ("… nastaveno …") rikaji, co aplikace
  * udelala misto toho, co uzivatel zadal, a musi se docist.

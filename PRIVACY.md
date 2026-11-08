@@ -32,14 +32,14 @@ RedCry je šachová aplikace pro Android. Nesbírá, neodesílá ani nesdílí
 - Aplikace nemá přístup k internetu: nežádá o oprávnění INTERNET ani
   o žádné jiné oprávnění Androidu, které dává přístup k osobním údajům.
 - Neobsahuje reklamy, analytiku ani hlášení pádů.
-- Partie a analýzy ukládá jen do souborů, které sám vybereš v systémovém
-  výběru souborů, a čte jen soubory, které sám otevřeš (například
-  partii v PGN).
+- Partie a analýzy ukládá jen do souborů, které uživatel sám vybere
+  v systémovém výběru souborů, a čte jen soubory, které sám otevře
+  (například partii v PGN).
 - V zařízení si aplikace pamatuje nastavení (například jazyk) a průběh
   běžící analýzy, aby mohla po přerušení pokračovat. Tato data zůstávají
   v soukromém úložišti aplikace a odinstalováním aplikace se smažou.
-  Máš-li v Androidu zapnuté zálohování zařízení, může je Android zahrnout
-  do tvé vlastní zálohy; RedCry sám je nikam neposílá.
+  Pokud je v Androidu zapnuté zálohování zařízení, může je Android
+  zahrnout do vlastní zálohy uživatele; RedCry sám je nikam neposílá.
 
-Kontakt: založ prosím issue na
+Kontakt: založte prosím issue na
 https://github.com/Stan2125/RedCry-source/issues

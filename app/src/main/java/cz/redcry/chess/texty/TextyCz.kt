@@ -39,13 +39,13 @@ object TextyCz : Texty {
 
     // --- Hlavni obrazovka: velke tlacitko a dlazdice ------------------------
 
-    override val premyslej = "Přemýšlej"
-    /** Tlacitko po stisku Hraj nejlepší, nez motor vrati tah. */
+    override val premyslej = "Přemýšlet"
+    /** Tlacitko po stisku Zahrát nejlepší, nez motor vrati tah. */
     override val dobiha = "Dobíhá…"
     /** Fialove tlacitko za hledani, nez je znamy cas. */
-    override val hrajNejlepsi = "Hraj nejlepší"
+    override val hrajNejlepsi = "Zahrát nejlepší"
     /** Fialove tlacitko za hledani s uplynulym casem. */
-    override fun hrajNejlepsiSekundy(sekund: Int) = "Hraj nejlepší (" + sekund + " s)"
+    override fun hrajNejlepsiSekundy(sekund: Int) = "Zahrát nejlepší (" + sekund + " s)"
     /** Leva dlazdice za hledani. */
     override val nejlepsiTah = "Nejlepší tah"
     /** Leva dlazdice mimo hledani: naposledy zahrany tah. */
@@ -96,7 +96,7 @@ object TextyCz : Texty {
             pocetTahu in 2..4 -> "" + pocetTahu + " tahy"
             else -> "" + pocetTahu + " tahů"
         }
-        return "Rozehraná partie (" + tahu + ") se zahodí. Pokud ji chceš mít, nejdřív ji ulož."
+        return "Rozehraná partie (" + tahu + ") se zahodí. Pokud ji chcete zachovat, nejdřív ji uložte."
     }
 
     /** Potvrzovaci tlacitko dialogu pred novou partii. */
@@ -153,7 +153,7 @@ object TextyCz : Texty {
     override val poznamkaSoukromi =
         "Ochrana soukromí: RedCry nesbírá, neodesílá ani nesdílí žádné " +
             "osobní údaje. Nemá přístup k internetu, reklamy ani analytiku. " +
-            "Partie a analýzy ukládá do souborů, které sám vybereš, " +
+            "Partie a analýzy ukládá do souborů, které uživatel sám vybere, " +
             "nastavení a průběh analýzy si drží v telefonu. Celé znění: " +
             "github.com/Stan2125/RedCry-source/blob/main/PRIVACY.md"
     /** Tlacitko dole v okne. */
@@ -192,7 +192,7 @@ object TextyCz : Texty {
     /** Tlacitko vedle slozky. */
     override val zmenitSlozku = "Změnit…"
     override val napovedaSlozky =
-        "Vyber podsložku, např. Documents/RedCry. Kořen úložiště ani " +
+        "Vyberte podsložku, např. Documents/RedCry. Kořen úložiště ani " +
             "samotnou složku Download Android nedovolí."
     /** Misto odhadu doby, kdyz rozsah nema tah. */
     override val vRozsahuNeniTah = "V rozsahu není žádný tah."
@@ -252,24 +252,24 @@ object TextyCz : Texty {
     override val partieUlozena = "Partie uložena."
     override val souborNeslUlozit = "Soubor se nepodařilo uložit."
     /** Stisk za zakladani motoru (Stockfish). */
-    override fun motorSeNacita(motor: String) = motor + " se ještě načítá, chvilku počkej."
+    override fun motorSeNacita(motor: String) = motor + " se ještě načítá, chvilku počkejte."
     /** Klepnuti na figuru strany, ktera neni na tahu. */
     override fun jeNaTahu(strana: Side) = (if (strana == Side.WHITE) "Bílý" else "Černý") + " je na tahu."
     override val tamFiguraNemuze = "Tam ta figura nemůže."
     override val neplatnyTah = "Neplatný tah."
-    /** Hraj nejlepší driv, nez motor dokoncil prvni hloubku. */
-    override val motorNenaselTah = "Motor ještě nenašel tah, zkus to znovu."
+    /** Zahrát nejlepší driv, nez motor dokoncil prvni hloubku. */
+    override val motorNenaselTah = "Motor ještě nenašel tah, zkuste to znovu."
     override val zadnyTahKonecPartie = "Žádný tah — konec partie."
-    override val engineVratilNeplatnyTah = "Engine vrátil neplatný tah."
+    override val engineVratilNeplatnyTah = "Motor vrátil neplatný tah."
     override fun motorNeniKDispozici(motor: String) = "Motor " + motor + " zatím není k dispozici."
     /** Prepnuti motoru, ktery nesel zalozit (bez zpravy od mostu). */
     override fun motorSeNepodariloSpustit(motor: String) = "Motor " + motor + " se nepodařilo spustit."
     override val poziciNesloObnovit = "Pozici se nepodařilo obnovit."
     override val poziciNesloNastavit = "Pozici se nepodařilo nastavit."
     /** Sipka ‹ na zacatku partie. */
-    override val jsiNaZacatku = "Jsi na začátku partie."
+    override val jsiNaZacatku = "Začátek partie."
     /** Sipka › na konci partie. */
-    override val jsiNaPoslednimTahu = "Jsi na posledním tahu."
+    override val jsiNaPoslednimTahu = "Poslední tah partie."
     /** Nacitani PGN se znackou FEN, kterou motor odmitne. */
     override val vychoziPoziciNesloNastavit = "Výchozí pozici partie se nepodařilo nastavit."
     /** Nacitani PGN zastavene na tahu, ktery nejde zahrat. */
@@ -280,9 +280,9 @@ object TextyCz : Texty {
      * odmitne a stav UI by se s enginem rozesel. Kazda takova cesta to
      * rekne timhle textem.
      */
-    override val enginePremysli = "Engine přemýšlí — počkej, nebo stiskni Hraj nejlepší."
+    override val enginePremysli = "Motor přemýšlí — počkejte, nebo stiskněte Zahrát nejlepší."
     /**
-     * Totez po stisku Hraj nejlepší, nez motor vrati tah: nativni strana
+     * Totez po stisku Zahrát nejlepší, nez motor vrati tah: nativni strana
      * jeste hleda. "Nejdriv zastav" by tady radilo neco, co uzivatel uz
      * udelal.
      */
@@ -292,13 +292,13 @@ object TextyCz : Texty {
      * az kdyz tah opravdu padne a neni to tah, ktery je v zaznamu dalsi
      * (krok U7/B). Premyslej ma od U7/B [starsiPoziceHledani].
      */
-    override val starsiPozice = "Hraješ ze starší pozice — pozdější tahy se zahodí."
+    override val starsiPozice = "Tah ze starší pozice — pozdější tahy se zahodí."
     /**
      * Premyslej ze starsi pozice (krok U7/B): jestli se neco urizne,
      * zalezi na tom, jaky tah motor najde.
      */
     override val starsiPoziceHledani =
-        "Hledáš ze starší pozice — jiný tah, než je v záznamu, pozdější tahy zahodí."
+        "Hledání ze starší pozice — jiný tah, než je v záznamu, pozdější tahy zahodí."
     /** Prepnuti v menu Hra. */
     override val knihovnaZapnuta = "Knihovna zahájení zapnuta."
     override val knihovnaVypnuta = "Knihovna zahájení vypnuta."
@@ -332,7 +332,7 @@ object TextyCz : Texty {
     override val analyzaBezi = "Probíhá analýza partie."
     /** Analyza partie bez tahu. */
     override val partieNemaTah = "Partie nemá žádný tah."
-    override val nejdrivVyberSlozku = "Nejdřív vyber složku pro výsledek."
+    override val nejdrivVyberSlozku = "Nejdřív vyberte složku pro výsledek."
     override val vZadanemRozsahuNeniTah = "V zadaném rozsahu není žádný tah."
     /** Chyba motoru za analyzy, [zprava] od motoru. */
     override fun analyzaPrerusenaChybou(zprava: String) = "Analýza přerušena: $zprava"
